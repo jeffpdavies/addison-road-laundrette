@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Addison Road Laundrette | Manly NSW - Full-Service Drop & Go Laundry & Dry Cleaning</title>
+  <!-- Inter & Plus Jakarta Sans Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0284c7', // Manly Coastal Blue
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+            },
+            sand: {
+              50: '#faf8f5',
+              100: '#f5f0e8',
+              200: '#e6ded0',
+            },
+            accent: {
+              emerald: '#10b981',
+              amber: '#f59e0b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .coastal-gradient {
+      background: linear-gradient(135deg, #075985 0%, #0284c7 50%, #38bdf8 100%);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 60% 30%, rgba(56, 189, 248, 0.12), transparent 70%),
+                  radial-gradient(circle at 10% 70%, rgba(14, 165, 233, 0.08), transparent 60%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Full-Service & Cash/Card Announcement Bar -->
+  <div class="bg-slate-900 text-white text-xs sm:text-sm py-2.5 px-4 shadow-sm border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2 font-medium flex-wrap">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-brand-500 text-white uppercase tracking-wider">
+          <i class="fa-solid fa-hands-bubbles mr-1.5"></i> Full-Service Drop &amp; Go
+        </span>
+        <span class="text-slate-200">We do the work for you! Same-day bag wash, ironing &amp; dry cleaning &bull; Cash &amp; Card accepted over the counter.</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium text-slate-300">
+        <span class="hidden xl:inline"><i class="fa-regular fa-clock mr-1 text-brand-400"></i> Mon–Fri: 7am–7pm &bull; Sat–Sun: 9am–4pm</span>
+        <a href="tel:0299775793" class="hover:text-white transition flex items-center gap-1.5 font-bold text-white bg-slate-800 px-3 py-1 rounded-lg border border-slate-700">
+          <i class="fa-solid fa-phone text-brand-400"></i> (02) 9977 5793
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-brand-400 flex items-center justify-center text-white shadow-md shadow-brand-500/25 group-hover:scale-105 transition duration-200">
+            <i class="fa-solid fa-water text-xl"></i>
+          </div>
+          <div>
+            <span class="font-heading font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 group-hover:text-brand-600 transition">
+              Addison Road <span class="text-brand-500 font-bold">Laundrette</span>
+            </span>
+            <p class="text-[11px] font-semibold text-slate-500 uppercase tracking-widest flex items-center gap-1.5">
+              <span>81 Addison Rd, Manly</span>
+              <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+              <span class="text-brand-600 font-bold">Full-Service Care</span>
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+          <a href="#services" class="hover:text-brand-600 transition">Services</a>
+          <a href="#how-it-works" class="hover:text-brand-600 transition">How Drop &amp; Go Works</a>
+          <a href="#gallery" class="hover:text-brand-600 transition">Shop Photos</a>
+          <a href="#commercial" class="hover:text-brand-600 transition flex items-center gap-1.5">
+            Airbnb &amp; Sports <span class="text-[10px] bg-brand-100 text-brand-700 px-2 py-0.5 rounded-full font-bold">Pro</span>
+          </a>
+          <a href="#pricing" class="hover:text-brand-600 transition">Wash &amp; Care Menu</a>
+          <a href="#faq" class="hover:text-brand-600 transition">FAQs</a>
+          <a href="#location" class="hover:text-brand-600 transition">Hours &amp; Location</a>
+        </nav>
+
+        <!-- Right Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#commercial" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 text-slate-700 text-sm font-semibold hover:border-brand-300 hover:text-brand-600 hover:bg-brand-50 transition">
+            <i class="fa-solid fa-briefcase text-brand-500"></i> Partner Inquiries
+          </a>
+          <a href="tel:0299775793" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold shadow-md shadow-brand-600/20 transition active:scale-95">
+            <i class="fa-solid fa-phone"></i> Call (02) 9977 5793
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition focus:outline-none">
+          <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-100 bg-white px-5 pt-3 pb-6 space-y-3 shadow-xl">
+      <div class="p-3 bg-brand-50 rounded-xl border border-brand-100 text-xs text-brand-800 font-medium">
+        <i class="fa-solid fa-circle-info mr-1 text-brand-600"></i> Full-Service Drop-Off Laundrette (Staff operated). Cash &amp; Card accepted over the counter.
+      </div>
+      <a href="#services" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 mobile-nav-link">Our Services</a>
+      <a href="#how-it-works" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 mobile-nav-link">How Drop &amp; Go Works</a>
+      <a href="#gallery" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 mobile-nav-link">Shop Photos</a>
+      <a href="#commercial" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 mobile-nav-link">Airbnb &amp; Sports Turnover</a>
+      <a href="#pricing" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 mobile-nav-link">Service Menu &amp; Options</a>
+      <a href="#faq" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 mobile-nav-link">Frequently Asked Questions</a>
+      <a href="#location" class="block px-3 py-2.5 rounded-xl text-base font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 mobile-nav-link">Hours &amp; Location (81 Addison Rd)</a>
+      <div class="pt-3 border-t border-slate-100 flex flex-col gap-2.5">
+        <a href="tel:0299775793" class="w-full text-center py-3 rounded-xl bg-brand-600 text-white text-sm font-semibold shadow-md shadow-brand-600/20">
+          <i class="fa-solid fa-phone mr-1.5"></i> Call Laundrette (02) 9977 5793
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden hero-glow pt-10 pb-16 lg:pt-16 lg:pb-24 border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <!-- Live Status & Full-Service Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-800 text-xs sm:text-sm font-semibold">
+            <span id="liveStatusDot" class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="liveStatusText">100% Full-Service Drop &amp; Go &bull; Manly, NSW</span>
+          </div>
+
+          <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+            Fresh, Fast &amp; Effortless Laundry on <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">Addison Road</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Skip the laundry chores altogether. Drop off your bags at 81 Addison Road and let our team handle the <strong>service wash, dry, fold, and ironing</strong>. We specialise in <strong>same-day bag washes</strong>, <strong>same-day dry cleaning</strong>, <strong>Airbnb linen turnovers</strong>, and <strong>sports club kits</strong>.
+          </p>
+
+          <!-- Core Feature Bullets -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1 text-xs sm:text-sm font-medium text-slate-700">
+            <span class="inline-flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-xs">
+              <i class="fa-solid fa-bag-shopping text-brand-600"></i> Same-Day Service Bag Wash
+            </span>
+            <span class="inline-flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-xs">
+              <i class="fa-solid fa-shirt text-brand-600"></i> Ironing &amp; Same-Day Dry Cleaning
+            </span>
+            <span class="inline-flex items-center gap-2 bg-white px-3.5 py-2 rounded-xl border border-slate-200 shadow-xs">
+              <i class="fa-solid fa-house-chimney-user text-brand-600"></i> Airbnb &amp; Sports Turnover
+            </span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+            <a href="#services" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-base shadow-lg shadow-brand-600/30 transition transform hover:-translate-y-0.5">
+              Explore Our Services
+            </a>
+            <a href="#gallery" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-xl bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-800 font-semibold text-base shadow-xs transition">
+              View Shop Photos
+            </a>
+          </div>
+
+          <!-- Highlight Stats -->
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200/80 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-700">Same Day</p>
+              <p class="text-xs text-slate-500 font-medium">Bag Wash &amp; Dry Clean</p>
+            </div>
+            <div>
+              <p class="font-heading font-extrabold text-2xl sm:text-3xl text-brand-700">Drop &amp; Go</p>
+              <p class="text-xs text-slate-500 font-medium">100% Staff Handled</p>
+            </div>
+            <div>
+              <p class="font-heading font-extrabold text-2xl sm:text-3xl text-emerald-600">7 Days</p>
+              <p class="text-xs text-slate-500 font-medium">7am–7pm M-F &bull; 9am–4pm Wknd</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Quick Card: Full-Service Promise & Highlights -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100 space-y-6">
+            <!-- Banner Header -->
+            <div class="bg-gradient-to-r from-brand-600 to-sky-600 text-white rounded-2xl p-5 shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-100">We Do It All For You</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              </div>
+              <h2 class="font-heading font-extrabold text-xl sm:text-2xl">Drop Off. We Wash &amp; Press. Done.</h2>
+              <p class="text-xs text-brand-100 mt-1">No waiting around—hand your laundry to our friendly counter staff and collect it fresh and neatly folded.</p>
+            </div>
+
+            <!-- Services Quick List -->
+            <div class="space-y-3 pt-1">
+              <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">What We Specialise In</p>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-jug-detergent text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-slate-900">Service Wash, Dry &amp; Fold (Same-Day)</h3>
+                  <p class="text-xs text-slate-500">Everyday bag washes, bed linen, and heavy King &amp; Queen doonas washed, dried, and folded.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-spray-can-sparkles text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-slate-900">Same-Day Dry Cleaning &amp; Ironing</h3>
+                  <p class="text-xs text-slate-500">Business shirts, suits, delicates, bag wash &amp; iron packages, plus clothing repairs &amp; alterations.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-people-group text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-slate-900">Airbnb Turnovers &amp; Sports Kits</h3>
+                  <p class="text-xs text-slate-500">Bulk holiday linen and muddy club jerseys washed, sanitised, and packed in order.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Payment Methods Over Counter -->
+            <div class="space-y-2 pt-2 border-t border-slate-100">
+              <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Counter Payments Accepted</p>
+              <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-700">
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2">
+                  <i class="fa-solid fa-money-bill-wave text-emerald-600 text-sm"></i> Cash Over Counter
+                </div>
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2">
+                  <i class="fa-solid fa-credit-card text-brand-600 text-sm"></i> EFTPOS &amp; Tap
+                </div>
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2">
+                  <i class="fa-brands fa-apple text-slate-900 text-sm"></i> Apple Pay
+                </div>
+                <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-2">
+                  <i class="fa-brands fa-google text-blue-500 text-sm"></i> Google Pay
+                </div>
+              </div>
+            </div>
+
+            <!-- Address note -->
+            <div class="p-3 bg-slate-50 rounded-xl text-center text-xs text-slate-600 border border-slate-100">
+              <i class="fa-solid fa-location-dot text-brand-500 mr-1.5"></i> 81 Addison Rd, Manly &bull; Mon–Fri 7am–7pm | Sat–Sun 9am–4pm
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Our Drop & Go Service Works Visual Guide -->
+  <section id="how-it-works" class="py-14 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-brand-600 font-bold text-xs uppercase tracking-wider bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Zero Hassle</span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">How Our Full-Service Drop &amp; Go Works</h2>
+        <p class="text-slate-600 text-sm mt-2">No waiting by machines or sorting wash loads. Get your week's laundry and ironing sorted in 2 minutes.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Step 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl font-heading font-extrabold shrink-0 shadow-md shadow-brand-600/20">
+            1
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-base text-slate-900 mb-1">Drop Off on Addison Road</h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Pull into the 30-minute parking right out front at 81 Addison Rd and hand your laundry bag, doona, or dry cleaning to our friendly team.
+            </p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl font-heading font-extrabold shrink-0 shadow-md shadow-brand-600/20">
+            2
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-base text-slate-900 mb-1">We Wash, Dry, Fold &amp; Iron</h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Our staff professionally wash, dry, neatly fold, or press your garments using commercial-grade equipment and premium detergents.
+            </p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-brand-600 text-white flex items-center justify-center text-xl font-heading font-extrabold shrink-0 shadow-md shadow-brand-600/20">
+            3
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-base text-slate-900 mb-1">Collect Fresh Laundry</h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Pick up your crisp, neatly packed clothes and linen—with same-day turnaround available on morning drop-offs—and pay via cash or card.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Services Section -->
+  <section id="services" class="py-16 sm:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-600 font-bold text-xs uppercase tracking-wider bg-brand-100/70 px-3 py-1 rounded-full">Complete Garment &amp; Linen Care</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Our Core Services in Manly</h2>
+        <p class="text-slate-600 mt-3 text-base">We are a 100% staff-operated laundry and dry cleaning service. From everyday bag washes and shirt ironing to holiday rental turnovers and club kits, we handle every load with care.</p>
+      </div>
+
+      <!-- 4 Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Service 1: Service Wash, Dry & Fold -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-soap"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100">
+                Same-Day Service Available
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-slate-900 mb-2">Service Bag Wash, Dry &amp; Fold</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Bring in your weekly household washing, sheets, towels, or heavy winter bedding. We wash, tumble dry, and neatly fold everything so it goes straight back into your wardrobe.
+            </p>
+            <ul class="space-y-3 text-xs text-slate-700 border-t border-slate-100 pt-5">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Same-Day Bag Wash:</strong> Drop off in the morning and collect fresh and folded the same day.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Bag Wash &amp; Iron Combos:</strong> Complete wash, dry, and full ironing packages available.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Doonas, Quilts &amp; Blankets:</strong> Deep cleaning and thorough drying for King &amp; Queen bedding.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Detergent Included:</strong> Commercial-grade wash care with every load (never mix customer loads).</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">100% Staff Handled</span>
+            <a href="#pricing" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              View service options <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2: Professional Dry Cleaning, Ironing & Repairs -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-vest-patches"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-100">
+                Same-Day Dry Cleaning
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-slate-900 mb-2">Dry Cleaning, Ironing &amp; Repairs</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Expert care for your workwear and valued garments. We offer same-day dry cleaning, crisp shirt and garment ironing, and clothing repairs and alterations.
+            </p>
+            <ul class="space-y-3 text-xs text-slate-700 border-t border-slate-100 pt-5">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Same-Day Dry Cleaning:</strong> Suits, trousers, coats, corporate attire, and formal dresses.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Dedicated Ironing Service:</strong> Business shirts, blouses, linen, and full laundry baskets pressed.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Repairs &amp; Alterations:</strong> Hemming, zip replacements, button repairs, and mending arranged.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Specialty Fabrics &amp; Wool:</strong> Gentle care for silk, woollens, feather doonas, and winter coats.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Suits, Shirts &amp; Alterations</span>
+            <a href="tel:0299775793" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Call for turnaround details <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3: Airbnb & Holiday Rental Turnover -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-brand-500/80 shadow-md hover:shadow-lg transition duration-200 flex flex-col justify-between relative">
+          <div class="absolute -top-3 right-8 bg-brand-600 text-white text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full shadow-sm">
+            Manly Host Favorite
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-bed"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-brand-50 text-brand-800 border border-brand-100">
+                Fast Turnarounds
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-slate-900 mb-2">Airbnb &amp; Short-Stay Linen Turnover</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Hosting guests in Manly, Queenscliff, or Fairlight? Keep your 5-star review streak alive with pristine, hotel-crisp bedding, doona covers, bath towels, and kitchen cloths.
+            </p>
+            <ul class="space-y-3 text-xs text-slate-700 border-t border-slate-100 pt-5">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Same-Day &amp; Rapid Turnaround:</strong> Ready before your guest check-in window.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Commercial Hygiene Sanitisation:</strong> Fresh, bright whites and hygienically cleaned towelling.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Professionally Folded &amp; Bundled:</strong> Sheets, pillowcases, and bath sets organized by bed size.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Commercial Accounts:</strong> Flexible invoicing for regular hosts and property managers.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Tailored host packages</span>
+            <a href="#commercial" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Host inquiry form <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4: Sports Team & Club Kit Turnover -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-futbol"></i>
+              </div>
+              <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-100">
+                Local Clubs &amp; Teams
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-slate-900 mb-2">Sports Team &amp; Club Kit Cleaning</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+              Don't make parents or team managers wash whole bags of muddy jerseys! We wash, de-stain, tumble-dry, and neatly pack full squad playing kits for local Northern Beaches clubs.
+            </p>
+            <ul class="space-y-3 text-xs text-slate-700 border-t border-slate-100 pt-5">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Rugby, Soccer, AFL &amp; Netball:</strong> Mud, grass, and tough sweat stain treatment.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Full Kit Care:</strong> Jerseys, shorts, socks, bibs, and warm-up vests handled together.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Numbered Order Packing:</strong> Folded and stacked sequentially for hassle-free match days.</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-brand-500"></i>
+                <span><strong>Weekly Season Packages:</strong> Dependable weekend-to-training turnarounds.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-500">Junior &amp; Senior squads</span>
+            <a href="#commercial" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
+              Club kit inquiry <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Service Menu & Options -->
+  <section id="pricing" class="py-16 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-brand-600 font-bold text-xs uppercase tracking-wider bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Drop-Off Service Menu</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Full-Service Wash, Iron &amp; Care Options</h2>
+        <p class="text-slate-600 mt-3 text-base">Every order is washed, dried, and finished by our staff in dedicated individual loads—never mixed with other customers' laundry.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Option 1: Service Bag Wash & Dry -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+              <span>Everyday Laundry</span>
+              <span class="text-brand-600 bg-brand-50 px-2 py-0.5 rounded">Same-Day Option</span>
+            </div>
+            <h3 class="font-heading font-extrabold text-2xl text-slate-900">Service Bag Wash &amp; Fold</h3>
+            <p class="text-xs text-slate-500 mt-1">Ideal for weekly clothing, gym gear, towels, and bed sheets.</p>
+            <div class="my-6">
+              <span class="text-2xl sm:text-3xl font-heading font-extrabold text-brand-600">Wash, Dry &amp; Fold</span>
+              <p class="text-slate-500 text-xs font-semibold mt-1">Priced by bag / load size at drop-off</p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-200 pt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Same-day turnaround when dropped early</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Washed &amp; dried in dedicated individual loads</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Neatly folded &amp; packed ready for drawers</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 text-center text-xs font-bold text-slate-500">
+            Drop Off 7 Days a Week
+          </div>
+        </div>
+
+        <!-- Option 2: Bag Wash & Iron / Dry Cleaning -->
+        <div class="p-8 rounded-3xl bg-white border-2 border-brand-500 shadow-xl relative flex flex-col justify-between">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-600 to-cyan-600 text-white text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full shadow-sm">
+            Most Popular Time-Saver
+          </div>
+          <div>
+            <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-brand-600 mb-2">
+              <span>Workwear &amp; Garments</span>
+              <span class="bg-brand-50 px-2 py-0.5 rounded font-bold">Crisp Finish</span>
+            </div>
+            <h3 class="font-heading font-extrabold text-2xl text-slate-900">Bag Wash &amp; Iron + Dry Cleaning</h3>
+            <p class="text-xs text-slate-500 mt-1">Complete garment care for business shirts, suits, dresses, and casual wear.</p>
+            <div class="my-6">
+              <span class="text-2xl sm:text-3xl font-heading font-extrabold text-brand-600">Pressed &amp; Hanged</span>
+              <p class="text-slate-500 text-xs font-semibold mt-1">Ironing-only or full wash &amp; iron bundles</p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-100 pt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Same-day dry cleaning service available</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Professional shirt &amp; trouser pressing</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Clothing repairs &amp; alterations arranged</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-center text-xs font-bold text-brand-600">
+            Reclaim your weekend from the ironing board
+          </div>
+        </div>
+
+        <!-- Option 3: Doonas, Blankets & Bulky Bedding -->
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+              <span>Heavy Bedding</span>
+              <span class="text-amber-600 bg-amber-50 px-2 py-0.5 rounded">King &amp; Queen</span>
+            </div>
+            <h3 class="font-heading font-extrabold text-2xl text-slate-900">Doonas, Quilts &amp; Blankets</h3>
+            <p class="text-xs text-slate-500 mt-1">Deep sanitising wash or dry clean for bulky bedding that won't fit at home.</p>
+            <div class="my-6">
+              <span class="text-2xl sm:text-3xl font-heading font-extrabold text-brand-600">Deep Clean Care</span>
+              <p class="text-slate-500 text-xs font-semibold mt-1">Single, Double, Queen &amp; King sizes</p>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-600 border-t border-slate-200 pt-4">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Feather, down, wool &amp; microfibre quilts</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Mattress toppers, throws &amp; heavy curtains</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500"></i> Thoroughly dried, fluffed &amp; bagged</li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 text-center text-xs font-bold text-slate-500">
+            Call (02) 9977 5793 for item quotes
+          </div>
+        </div>
+      </div>
+
+      <!-- Detergent & Payment Reminder -->
+      <div class="mt-8 bg-brand-50/60 rounded-2xl p-6 border border-brand-100 flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm text-slate-700">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-pump-soap text-brand-600 text-xl"></i>
+          <span><strong>All detergents included:</strong> We supply commercial-grade detergents and softeners (or let us know if you have sensitive skin preferences).</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-cash-register text-emerald-600 text-xl"></i>
+          <span><strong>Counter Payments:</strong> Both Cash and Card / EFTPOS accepted over the counter.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial & Partner Inquiry Section -->
+  <section id="commercial" class="py-16 sm:py-24 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left info -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-brand-400 font-bold text-xs uppercase tracking-wider bg-brand-950 px-3 py-1 rounded-full border border-brand-800">
+            Host &amp; Club Partnerships
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Reliable Linen &amp; Uniform Turnaround for Manly Businesses &amp; Teams
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Whether you run busy short-stay apartments in Manly or manage a sporting club with 15+ squads playing every weekend, we take the stress out of washing, drying, and folding.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-600/30 border border-brand-500/40 flex items-center justify-center text-brand-400 shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white">Guaranteed Fast Turnarounds</h3>
+                <p class="text-xs text-slate-400">Scheduled drops and ready-for-checkin or match day pickup.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-600/30 border border-brand-500/40 flex items-center justify-center text-brand-400 shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white">Organised &amp; Neatly Bundled</h3>
+                <p class="text-xs text-slate-400">Kits packed by jersey numbers; linen packed by bed sizes (King, Queen, Singles).</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-brand-600/30 border border-brand-500/40 flex items-center justify-center text-brand-400 shrink-0">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-white">Convenient Addison Road Drop-Off</h3>
+                <p class="text-xs text-slate-400">30-minute street parking right outside for quick drop and collect.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-800/80 border border-slate-700 text-xs text-slate-300 flex items-center justify-between">
+            <span>Prefer to chat directly?</span>
+            <a href="tel:0299775793" class="text-brand-400 font-bold hover:underline">
+              <i class="fa-solid fa-phone mr-1"></i> (02) 9977 5793
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="lg:col-span-6">
+          <div class="bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100">
+            <h3 class="font-heading font-extrabold text-xl text-slate-900 mb-1">Service &amp; Booking Inquiry</h3>
+            <p class="text-xs text-slate-500 mb-6">Tell us about your laundry needs, property, or club, and we’ll prepare a tailored quote.</p>
+
+            <div id="bookingSuccess" class="hidden mb-5 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200">
+              <i class="fa-solid fa-circle-check mr-1.5 text-emerald-600"></i> Thank you! Your inquiry has been sent. We'll be in touch shortly.
+            </div>
+
+            <form id="commercialForm" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
+              <input type="hidden" name="form-name" value="inquiry">
+              <p class="hidden"><label>Leave blank: <input name="bot-field"></label></p>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">What service do you need?</label>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                    <input type="radio" name="serviceType" value="Airbnb / Holiday Rental" checked class="text-brand-600 focus:ring-brand-500">
+                    <span class="font-medium text-slate-800">Airbnb / Rental</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                    <input type="radio" name="serviceType" value="Sports Club Kits" class="text-brand-600 focus:ring-brand-500">
+                    <span class="font-medium text-slate-800">Sports Team Kits</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                    <input type="radio" name="serviceType" value="Dry Cleaning & Ironing" class="text-brand-600 focus:ring-brand-500">
+                    <span class="font-medium text-slate-800">Dry Clean / Ironing</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-50 transition">
+                    <input type="radio" name="serviceType" value="Service Bag Wash / Doonas" class="text-brand-600 focus:ring-brand-500">
+                    <span class="font-medium text-slate-800">Bag Wash / Doonas</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="commName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Your Name / Business</label>
+                  <input type="text" id="commName" name="name" required placeholder="e.g. Manly Waves Airbnb" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-brand-400 outline-none">
+                </div>
+                <div>
+                  <label for="commPhone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Phone Number</label>
+                  <input type="tel" id="commPhone" name="phone" required placeholder="0400 000 000" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-brand-400 outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="commEmail" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Email Address</label>
+                  <input type="email" id="commEmail" name="email" required placeholder="contact@example.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-brand-400 outline-none">
+                </div>
+                <div>
+                  <label for="commVolume" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Expected Frequency / Volume</label>
+                  <input type="text" id="commVolume" name="volume" placeholder="e.g. 2 turnovers/week or 1 kit" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-brand-400 outline-none">
+                </div>
+              </div>
+
+              <div>
+                <label for="commDetails" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Requirements / Details</label>
+                <textarea id="commDetails" name="details" rows="3" placeholder="Tell us about the items, special timing requirements, or questions..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:ring-2 focus:ring-brand-400 outline-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3 px-6 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs uppercase tracking-wider shadow-md shadow-brand-600/25 transition">
+                Send Inquiry to Addison Road Team
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-brand-600 font-bold text-xs uppercase tracking-wider bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Inside &amp; Out</span>
+        <h2 class="font-heading text-3xl font-extrabold text-slate-900 mt-2">Visit Our Manly Shop</h2>
+        <p class="text-slate-600 text-sm mt-2">Located at 81 Addison Road, Manly. Drop by for quick, friendly service and easy curbside parking.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Photo 1: Storefront Signage & Exterior -->
+        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 group">
+          <div class="h-64 overflow-hidden bg-slate-200">
+            <img src="storefront-1.jpg" alt="Addison Road Laundrette Storefront Signage" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Storefront Exterior</h3>
+            <p class="text-xs text-slate-500 mt-0.5">81 Addison Road, Manly</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Window Services & Hours -->
+        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 group">
+          <div class="h-64 overflow-hidden bg-slate-200">
+            <img src="storefront-2.jpg" alt="Dry Cleaning and Services Window" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Services &amp; Dry Cleaning</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Clear drop-off &amp; care details</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Interior Equipment & Sorting -->
+        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 group">
+          <div class="h-64 overflow-hidden bg-slate-200">
+            <img src="interior.jpg" alt="Laundrette Interior Workspace" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Interior &amp; Workspace</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Professional washing &amp; sorting area</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Street View & Parking -->
+        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-50 group">
+          <div class="h-64 overflow-hidden bg-slate-200">
+            <img src="street-view.jpg" alt="Street View Addison Road Manly" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Easy Curbside Parking</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Quick drop-off right outside</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section id="location" class="py-16 sm:py-24 bg-slate-50 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+        <!-- Info Left -->
+        <div class="lg:col-span-5 bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div class="space-y-6">
+            <div>
+              <span class="text-brand-600 font-bold text-xs uppercase tracking-wider bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Visit Us</span>
+              <h2 class="font-heading text-3xl font-extrabold text-slate-900 mt-2">Hours &amp; Location</h2>
+              <p class="text-slate-600 text-sm mt-1">Conveniently located on Addison Road in Manly with quick street parking out front.</p>
+            </div>
+
+            <!-- Address card -->
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-100">
+              <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-slate-900 text-sm">Addison Road Laundrette</h3>
+                <p class="text-slate-600 text-xs mt-0.5">81 Addison Rd, Manly NSW 2095</p>
+                <p class="text-brand-600 text-xs font-semibold mt-1"><i class="fa-solid fa-square-parking mr-1"></i> 30-min curbside parking right out front</p>
+              </div>
+            </div>
+
+            <!-- Operating Hours -->
+            <div class="space-y-2 border-t border-slate-100 pt-4">
+              <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">Weekly Operating Hours</h3>
+              <div class="space-y-2 text-xs">
+                <div class="flex justify-between py-1.5 border-b border-slate-100">
+                  <span class="font-medium text-slate-700">Monday &ndash; Friday</span>
+                  <span class="font-extrabold text-brand-700">7:00 AM &ndash; 7:00 PM</span>
+                </div>
+                <div class="flex justify-between py-1.5 border-b border-slate-50">
+                  <span class="font-medium text-slate-700">Saturday &amp; Sunday</span>
+                  <span class="font-extrabold text-brand-700">9:00 AM &ndash; 4:00 PM</span>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-2">
+                <i class="fa-solid fa-bolt mr-1 text-brand-500"></i> Drop off early in the morning for <strong>same-day bag wash &amp; dry cleaning</strong> turnaround.
+              </p>
+            </div>
+
+            <!-- Payment note -->
+            <div class="p-3.5 rounded-xl bg-sky-50 border border-sky-100 text-xs text-sky-900 flex items-center gap-2.5 font-medium">
+              <i class="fa-solid fa-cash-register text-sky-600 text-base"></i>
+              <span><strong>Counter Payments:</strong> We accept both Cash and Card / EFTPOS over the counter.</span>
+            </div>
+          </div>
+
+          <div class="pt-6">
+            <a href="https://maps.google.com/?q=81+Addison+Rd,+Manly+NSW+2095" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm shadow-md shadow-brand-600/20 transition">
+              <i class="fa-solid fa-diamond-turn-right"></i> Open Directions in Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Map Right -->
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-slate-200 shadow-sm relative min-h-[420px] bg-slate-100 flex flex-col">
+          <div class="p-3.5 bg-white border-b border-slate-100 flex items-center justify-between text-xs">
+            <span class="font-semibold text-slate-700"><i class="fa-solid fa-map-pin text-red-500 mr-1.5"></i> 81 Addison Rd, Manly NSW</span>
+            <a href="https://maps.google.com/?q=81+Addison+Rd,+Manly+NSW+2095" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:underline font-bold">
+              View larger map <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-1"></i>
+            </a>
+          </div>
+          <iframe
+            title="Addison Road Laundrette Location Map"
+            src="https://maps.google.com/maps?q=81+Addison+Rd,+Manly+NSW+2095&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full flex-grow border-0 min-h-[380px]"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Accordion) -->
+  <section id="faq" class="py-16 sm:py-24 bg-white border-b border-slate-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-brand-600 font-bold text-xs uppercase tracking-wider bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Got Questions?</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Frequently Asked Questions</h2>
+        <p class="text-slate-600 mt-3 text-base">Everything you need to know about our full-service drop-off laundry, dry cleaning, and turnaround times.</p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        <!-- Q1 Payment methods -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-slate-900 flex items-center justify-between bg-white hover:bg-slate-50 transition">
+            <span>What payment methods do you accept?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transform transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-sm text-slate-600 bg-slate-50/60 leading-relaxed">
+            We accept both <strong>Cash</strong> and <strong>Card / EFTPOS / Contactless (Apple Pay & Google Pay)</strong> over the counter when you drop off or collect your laundry and dry cleaning.
+          </div>
+        </div>
+
+        <!-- Q2 Same-Day Turnaround & Dry Cleaning -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-slate-900 flex items-center justify-between bg-white hover:bg-slate-50 transition">
+            <span>How fast is your turnaround for bag washes and dry cleaning?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transform transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-sm text-slate-600 bg-slate-50/60 leading-relaxed">
+            We offer <strong>same-day service</strong> on both bag washes and dry cleaning when dropped off early in the morning, as well as standard next-day collection. We also offer dedicated shirt and garment ironing and clothing repairs/alterations.
+          </div>
+        </div>
+
+        <!-- Q3 Airbnb -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-slate-900 flex items-center justify-between bg-white hover:bg-slate-50 transition">
+            <span>How does the Airbnb / Holiday Rental service work?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transform transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-sm text-slate-600 bg-slate-50/60 leading-relaxed">
+            We provide full linen turnover for Northern Beaches hosts. Drop off your used sheets, doona covers, pillow slips, and bath towels, and we wash, sanitise, dry, fold, and bundle them by bed size so they are ready before guest check-in. Weekly accounts and invoices are available.
+          </div>
+        </div>
+
+        <!-- Q4 Sports Teams -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-slate-900 flex items-center justify-between bg-white hover:bg-slate-50 transition">
+            <span>Can you wash sports club kits and muddy jerseys?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transform transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-sm text-slate-600 bg-slate-50/60 leading-relaxed">
+            Yes! We regularly handle rugby, soccer, AFL, netball, and touch football kits. We treat stubborn mud and turf stains, dry them thoroughly, and pack them neatly in numerical order so your coach or team manager has zero stress on match day.
+          </div>
+        </div>
+
+        <!-- Q5 Doonas & Detergents -->
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left font-heading font-bold text-slate-900 flex items-center justify-between bg-white hover:bg-slate-50 transition">
+            <span>Can you clean King size doonas, and do I need to bring detergent?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-sm transform transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 pt-1 text-sm text-slate-600 bg-slate-50/60 leading-relaxed">
+            Yes—we clean and thoroughly dry King and Queen feather doonas, wool blankets, quilts, and mattress toppers. You never need to bring your own soap; commercial-grade detergents are included with every service wash (just let us know at drop-off if you have sensitive skin or specific requests).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- Col 1 -->
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center gap-2.5 text-white">
+            <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white">
+              <i class="fa-solid fa-water text-sm"></i>
+            </div>
+            <span class="font-heading font-extrabold text-lg text-white">Addison Road Laundrette</span>
+          </div>
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+            Manly's trusted full-service drop-off laundrette and dry cleaners. Same-day bag wash &amp; fold, professional ironing, garment repairs, Airbnb linen turnover, and sports squad kit laundry.
+          </p>
+          <div class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 bg-slate-900 px-3 py-1 rounded-lg border border-slate-800">
+            <i class="fa-solid fa-hands-bubbles"></i> 100% Full-Service Drop &amp; Go &bull; Cash &amp; Card Accepted
+          </div>
+          <p class="text-xs text-slate-500 pt-1">
+            &copy; <span id="year"></span> Addison Road Laundrette. All rights reserved.
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-3">Our Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-white transition">Same-Day Bag Wash &amp; Dry</a></li>
+            <li><a href="#services" class="hover:text-white transition">Dry Cleaning &amp; Shirt Ironing</a></li>
+            <li><a href="#commercial" class="hover:text-white transition">Airbnb &amp; Rental Linen</a></li>
+            <li><a href="#commercial" class="hover:text-white transition">Sports Team Kits</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Doonas, Quilts &amp; Repairs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-3">Location &amp; Contact</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-map-pin text-brand-400 mt-0.5"></i>
+              <span>81 Addison Rd, Manly NSW 2095</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-brand-400"></i>
+              <a href="tel:0299775793" class="hover:text-white transition">(02) 9977 5793</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-clock text-brand-400 mt-0.5"></i>
+              <span>Mon–Fri: 7:00 AM – 7:00 PM<br>Sat–Sun: 9:00 AM – 4:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        Addison Road Laundrette &bull; 81 Addison Road, Manly NSW 2095 &bull; Full-Service Wash, Dry, Fold &amp; Dry Cleaning
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // Copyright dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Live Open/Closed Badge Calculation (Sydney Time: Mon-Fri 7am-7pm, Sat-Sun 9am-4pm)
+    function updateOpenStatus() {
+      try {
+        const nowSydney = new Date(new Date().toLocaleString('en-US', { timeZone: 'Australia/Sydney' }));
+        const day = nowSydney.getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
+        const hour = nowSydney.getHours() + nowSydney.getMinutes() / 60;
+        const isWeekend = (day === 0 || day === 6);
+        const isOpen = isWeekend ? (hour >= 9 && hour < 16) : (hour >= 7 && hour < 19);
+
+        const dot = document.getElementById('liveStatusDot');
+        const text = document.getElementById('liveStatusText');
+        if (isOpen) {
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse';
+          text.innerHTML = 'Open Now in Manly &bull; Full-Service Drop &amp; Go';
+        } else {
+          dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-500';
+          const nextOpen = (day === 5 && hour >= 19) || (day === 6 && hour < 9) || (day === 6 && hour >= 16) || (day === 0 && hour < 9)
+            ? 'Opens 9:00 AM Weekend'
+            : 'Opens 7:00 AM Weekday';
+          text.innerHTML = `Currently Closed (${nextOpen}) &bull; Full-Service Drop &amp; Go`;
+        }
+      } catch (e) {
+        // Fallback if timezone parsing is unsupported
+      }
+    }
+    updateOpenStatus();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isClosed = mobileMenu.classList.contains('hidden');
+      if (isClosed) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.className = 'fa-solid fa-xmark text-xl';
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-xl';
+      }
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.className = 'fa-solid fa-bars text-xl';
+      });
+    });
+
+    // FAQ Accordion
+    const faqBtns = document.querySelectorAll('.faq-btn');
+    faqBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('i');
+        const isHidden = content.classList.contains('hidden');
+
+        // Close others
+        faqBtns.forEach(otherBtn => {
+          otherBtn.nextElementSibling.classList.add('hidden');
+          otherBtn.querySelector('i').classList.remove('rotate-180');
+        });
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+
+    // Commercial & Booking Form Submission
+    const commercialForm = document.getElementById('commercialForm');
+    const bookingSuccess = document.getElementById('bookingSuccess');
+
+    commercialForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(commercialForm);
+      const name = data.get('name') || '';
+      const serviceType = data.get('serviceType') || '';
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      }).then(res => {
+        if (!res.ok) throw new Error(res.status);
+        bookingSuccess.className = 'mb-5 p-4 rounded-xl bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200';
+        bookingSuccess.textContent = `Thank you ${name}. We've received your request for ${serviceType} and will be in touch shortly.`;
+        commercialForm.reset();
+      }).catch(() => {
+        bookingSuccess.className = 'mb-5 p-4 rounded-xl bg-amber-50 text-amber-800 text-xs font-semibold border border-amber-200';
+        bookingSuccess.textContent = 'Sorry, something went wrong sending your inquiry. Please call us on (02) 9977 5793.';
+      });
+    });
+  </script>
+</body>
+</html>
