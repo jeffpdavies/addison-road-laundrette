@@ -16,7 +16,7 @@ export default function ContactSuccess({ customerName, onReset }) {
       <div className="bg-gray-50 p-4 rounded-md text-sm text-gray-700 mb-6 text-left">
         <p className="font-semibold mb-1">Need immediate assistance?</p>
         <p>Call us directly at <a href="tel:0299775793" className="text-blue-600 font-medium hover:underline">(02) 9977 5793</a>.</p>
-        <p className="text-xs text-gray-500 mt-2">Open 7 days: 7:00 AM – 9:00 PM</p>
+        <p className="text-xs text-gray-500 mt-2">Mon–Wed 7am–7pm · Thu 7am–5pm · Fri 8am–4pm · Sat–Sun 9am–4pm</p>
       </div>
 
       <button
